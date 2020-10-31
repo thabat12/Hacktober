@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "338831228308",
+    "firebase_url": "https://cryptopix-c7343.firebaseio.com",
+    "project_id": "cryptopix-c7343",
+    "storage_bucket": "cryptopix-c7343.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338831228308:android:0893986be55268fc336381",
+        "android_client_info": {
+          "package_name": "com.example.hacktober"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338831228308-dmstajep51nej5n02ni0uk8nifhvll9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgFoY59apz0nWScAfv9WEHlu70C4U8_zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338831228308-dmstajep51nej5n02ni0uk8nifhvll9u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
