@@ -57,7 +57,7 @@
     </RelativeLayout>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView4"
+        android:id="@+id/camera"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_marginLeft="30dp"
