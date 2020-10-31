@@ -5,9 +5,9 @@ import android.os.Parcelable
 import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter.writeString
 
 data class User(
-    val id: String,
-    val email: String,
-    val password: String
+    var id: String = "",
+    var email: String = "",
+    var password: String = ""
 ) : Parcelable {
     constructor(source: Parcel) : this(
         source.readString()!!,

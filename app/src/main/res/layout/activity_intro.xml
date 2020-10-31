@@ -33,7 +33,7 @@
         android:text="CryptoPix"
         android:textColor="@android:color/holo_red_light"
         android:textSize="55dp"
-        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/intro_email"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -45,11 +45,11 @@
         android:text="Log in to Cloud"
         android:textColor="#ffffff"
         android:textSize="33dp"
-        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/intro_email"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/intro_email"
         android:layout_width="330dp"
         android:layout_height="65dp"
         android:layout_marginBottom="396dp"
@@ -66,7 +66,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/intro_password"
         android:layout_width="330dp"
         android:layout_height="65dp"
         android:layout_marginBottom="304dp"
@@ -109,11 +109,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/log_in"
         android:layout_width="330dp"
         android:layout_height="65dp"
         android:layout_marginBottom="172dp"
         android:background="@drawable/accented_button"
-        android:text="Continue"
+        android:text="Log in"
         android:fontFamily="@font/asap_medium"
         android:textSize="25dp"
         android:textColor="@android:color/white"
