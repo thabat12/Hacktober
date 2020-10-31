@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
+import android.view.WindowManager
 import android.widget.Toast
 import com.example.hacktober.R
 import com.example.hacktober.firebase.FirestoreClass
@@ -19,7 +20,10 @@ class SignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
-
+        window.setFlags(
+                WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
+                WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN
+        )
         continue_setup.setOnClickListener {
             registerUser()
             startActivity(Intent(this@SignupActivity, PinActivity::class.java))

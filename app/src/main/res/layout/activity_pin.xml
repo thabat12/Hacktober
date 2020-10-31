@@ -8,7 +8,6 @@
     tools:context=".activities.IntroActivity">
 
     <TextView
-        android:textStyle="bold"
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,6 +16,7 @@
         android:text="Enter Passcode"
         android:textColor="@color/colorPrimary"
         android:textSize="32dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,24 +37,24 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <com.andrognito.pinlockview.PinLockView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="360dp"
+        android:layout_height="380dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.82"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.298" />
+        app:layout_constraintVertical_bias="0.143" />
 
     <Button
         android:id="@+id/skip_pin"
-        android:text="Skip"
-        android:textColor="@android:color/white"
         android:layout_width="100dp"
         android:layout_height="65dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/accented_button"
+        android:text="Skip"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
