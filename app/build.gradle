@@ -36,9 +36,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:19.2.0'
     // Firestore auth
     implementation 'com.google.firebase:firebase-firestore:22.0.0'
-
     //Material
     implementation 'com.google.android.material:material:1.2.1'
+    //Pinlockview
+    implementation 'com.andrognito.pinlockview:pinlockview:2.1.0'
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"

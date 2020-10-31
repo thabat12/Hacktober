@@ -1,5 +1,6 @@
 package com.example.hacktober.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
@@ -21,6 +22,8 @@ class SignupActivity : AppCompatActivity() {
 
         continue_setup.setOnClickListener {
             registerUser()
+            startActivity(Intent(this@SignupActivity, PinActivity::class.java))
+            finish()
 
         }
     }
