@@ -13,8 +13,8 @@ class IntroActivity : AppCompatActivity() {
         setContentView(R.layout.activity_intro)
 
         window.setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN
+                WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
+                WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN
         )
 
         intro_to_register.setOnClickListener {
