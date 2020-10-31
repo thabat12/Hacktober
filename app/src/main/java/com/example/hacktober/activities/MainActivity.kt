@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN
         )
         setContentView(R.layout.activity_main)
-        camera.setOnClickListener {
+        camera  .setOnClickListener {
             startActivity(
                     Intent(this@MainActivity, PictureActivity::class.java)
             )
