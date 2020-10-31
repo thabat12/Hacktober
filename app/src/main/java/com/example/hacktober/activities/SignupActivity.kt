@@ -21,14 +21,16 @@ class SignupActivity : AppCompatActivity() {
 
         continue_setup.setOnClickListener {
             registerUser()
+
         }
     }
 
     private fun registerUser(){
-        val username: String = username.text.toString()
-        val email: String = password.text.toString().trim { it <= ' ' }
-        val password: String = confirm_password.text.toString().trim { it <= ' ' }
-        Log.e("Texts", "$username $password")
+        val email: String = username.text.toString().trim { it <= ' ' }
+        val password: String = password.text.toString().trim { it <= ' ' }
+        val passwordConfirm: String = confirm_password.text.toString().trim { it <= ' ' }
+
+        if (! password.equals(passwordConfirm)) { return }
 
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(
