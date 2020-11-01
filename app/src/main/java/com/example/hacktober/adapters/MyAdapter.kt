@@ -2,7 +2,7 @@ import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.example.hacktober.fragments.Cricket
+import com.example.hacktober.fragments.Private
 
 @Suppress("DEPRECATION")
 internal class MyAdapter(
@@ -17,7 +17,7 @@ internal class MyAdapter(
                 Football()
             }
             1 -> {
-                Cricket()
+                Private()
             }
             2 -> {
                 NBA()

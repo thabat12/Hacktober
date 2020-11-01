@@ -18,12 +18,19 @@ class SplashActivity : AppCompatActivity() {
 
 
 
+
+
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this@SplashActivity, IntroActivity::class.java))
+
+            if (FirestoreClass().getCurrentUserID().isNotEmpty()) {
+                startActivity(Intent(this@SplashActivity, PinActivity::class.java))
+            } else {
+                startActivity(Intent(this@SplashActivity, IntroActivity::class.java))
+            }
         }, 2500)
 
     }
